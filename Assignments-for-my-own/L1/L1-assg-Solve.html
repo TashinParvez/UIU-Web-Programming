@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tashin2</title>
+</head>
+
+<body>
+    <!------------------------- Start ------------------------->
+
+    <h3>📝 Assignment 1: Text Formatting (Bold, Italic, Underline, Font Size & Color)
+    </h3>
+
+    <b>Lorem ipsum dolor sit tashin.</b><br>
+    <i>Lorem ipsum dolor sit tashin.</i><br>
+    <u>Lorem ipsum dolor sit tashin.</u><br>
+
+    <font color="red">
+        Lorem ipsum dolor sit <small>tashin </small> <big> Parvez</big>
+    </font> <br>
+
+    <hr>
+    <hr>
+
+    <h3>
+        📝 Assignment 2: Table Creation
+    </h3>
+
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>Course</th>
+            <th>marks</th>
+        </tr>
+
+
+        <tr>
+            <td>Tashin</td>
+            <td>HTML</td>
+            <td>45</td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <hr>
+
+    <h3>📝 Assignment 3: Forms with Input Fields </h3>
+
+    <table>
+        <tr>
+            <td>name</td>
+            <td><input type="text" name="name" id=""></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" id=""></td>
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" id=""></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" id="male" value="Male"> <label for="male">male</label>
+                <input type="radio" name="gender" id="female" value="Female"><label for="female">female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Country</td>
+            <td>
+                <select name="Country" id="">
+                    <option value="" selected disabled hidden>Select a Country</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="India">India</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <button>Submit</button>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+    <hr>
+    <hr>
+
+    <h3>📝 Bonus Challenge: Build a Registration Page</h3>
+
+
+  
+    <form id="registrationForm">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required placeholder="Enter student's name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required placeholder="Enter student's email"></td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select name="course" required>
+                        <option value="" selected disabled hidden>Select Course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="Male" required> <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Register</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Registered Students</h2>
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Registered students will be added here dynamically -->
+        </tbody>
+    </table>
+
+
+
+
+
+    <hr>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------------- END ------------------------->
+</body>
+
+</html>

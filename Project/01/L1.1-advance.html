@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Registration Page</h1>
+    <p><b>Welcome to the Student Registration Portal!</b> <i>Please fill out the form below to register a new
+            student.</i> <u>Your information will be kept confidential.</u></p>
+
+    <form id="registrationForm">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required placeholder="Enter student's name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required placeholder="Enter student's email"></td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select name="course" required>
+                        <option value="" selected disabled hidden>Select Course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="Male" required> <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Register</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Registered Students</h2>
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Registered students will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // Get form data
+            const name = this.name.value;
+            const email = this.email.value;
+            const course = this.course.value;
+            const gender = this.gender.value;
+
+            // Create a new row for the registered student
+            const table = document.getElementById('studentsTable').getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+            newRow.innerHTML = `<td>${name}</td><td>${email}</td><td>${course}</td><td>${gender}</td>`;
+
+            // Clear the form after submission
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>

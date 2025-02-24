@@ -53,13 +53,3 @@ Country: [Dropdown]
 [Submit]
 
 ---
-
-## 📝 Bonus Challenge: Build a Registration Page  
-### ✅ Task:  
-Combine **text formatting, tables, and forms** to create a **student registration page** that includes:  
-- A **title**  
-- A **description** with formatting (bold, italic, underline)  
-- A **form** to register students  
-- A **table** displaying registered students  
-
----
