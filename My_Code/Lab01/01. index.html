@@ -10,96 +10,119 @@
 <body>
   <!------------------------- Start ------------------------->
 
+  <b>Lorem ipsum dolor sit</b><br />
+  <i>Lorem ipsum dolor sit</i><br />
+  <u>Lorem ipsum dolor sit</u><br />
 
-  <b>Lorem ipsum dolor sit </b><br />
-  <i>Lorem ipsum dolor sit </i><br />
-  <u>Lorem ipsum dolor sit </u><br />
+  <font color="blue">Lorem ipsum dolor sit</font><br />
 
-  <font color="blue">Lorem ipsum dolor sit </font><br />
+  <!-- 
+      Other attributes of the font tag:
+       1. size="4" (Font size)
+       2. face="Arial" (Font family) 
+  -->
 
   <hr />
 
   <!------------------------- Table 1 ------------------------->
+
   <table border="1">
-    <th>si</th>
-    <th>Name</th>
-    <th>Class</th>
-    <th>Dept</th>
+    <thead>
+      <tr>
+        <th>si</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Dept</th>
+      </tr>
+    </thead>
 
-    <tr>
-      <td>1</td>
-      <td>X</td>
-      <td>A</td>
-      <td>CSE</td>
-    </tr>
-
-    <tr>
-      <td>2</td>
-      <td>Y</td>
-      <td>B</td>
-      <td>CSE</td>
-    </tr>
-
-    <tr>
-      <td>3</td>
-      <td>Z</td>
-      <td>C</td>
-      <td>EEE</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>X</td>
+        <td>A</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Y</td>
+        <td>B</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Z</td>
+        <td>C</td>
+        <td>EEE</td>
+      </tr>
+    </tbody>
   </table>
 
   <hr />
+
   <!------------------------- Table 2 ------------------------->
 
-  <table border="1">
-    <th>si</th>
-    <th>Name</th>
-    <th>Dept</th>
+  <table border="3">
+    <thead>
+      <tr>
+        <th>si</th>
+        <th>Name</th>
+        <th>Dept</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>X</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Y</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        
+        <td colspan="3">Hello There</td> <!-- Column merge -->
 
-    <tr>
-      <td>1</td>
-      <td>X</td>
-      <td>CSE</td>
-    </tr>
-
-    <tr>
-      <td>2</td>
-      <td>Y</td>
-      <td>CSE</td>
-    </tr>
-
-    <tr>
-      <td colspan="3">Hello There</td>
-    </tr>
+      </tr>
+    </tbody>
   </table>
 
   <hr />
+
   <!------------------------- Table 3 ------------------------->
 
   <table border="1">
-    <th>si</th>
-    <th>Name</th>
-    <th>Dept</th>
+    <thead>
+      <tr>
+        <th>si</th>
+        <th>Name</th>
+        <th>Dept</th>
+      </tr>
+    </thead>
 
-    <tr>
-      <td>1</td>
-      <td>X</td>
-      <td rowspan="3">CSE</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>X</td>
 
-    <tr>
-      <td>2</td>
-      <td>Y</td>
-    </tr>
+        <td rowspan="3">CSE</td> <!-- Row merge -->
 
-    <tr>
-      <td>3</td>
-      <td>Z</td>
-    </tr>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Y</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Z</td>
+      </tr>
+    </tbody>
+
   </table>
 
   <hr />
-
 
   <!------------------------- End ------------------------->
 </body>

@@ -4,26 +4,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tashin</title>
+  <title>Tashin2</title>
 </head>
 
 <body>
-  <!------------------------- Start  ------------------------->
+  <!------------------------- Start ------------------------->
 
-
-  <!------------------------- FORM  ------------------------->
+  <!------------------------- FORM ------------------------->
 
   <form>
     <table>
+
       <tr>
         <td>Name</td>
         <td><input type="text" name="name" placeholder="Enter your name" /></td>
+
+        <!-- 
+          name="name" - This attribute serves two main purposes:
+          1. **Form Submission**: When the form is submitted, the input's value will be sent as "name=Alice" if "Alice" is entered.
+          2. **Identification**: It helps identify the field in server-side scripts or JavaScript, allowing for easy reference later.
+        -->
+
       </tr>
 
       <tr>
         <td>Email</td>
         <td>
-          <input type="email" name="email" placeholder="Enter your mail" />
+          <input type="email" name="email" placeholder="Enter your email" />
         </td>
       </tr>
 
@@ -36,38 +43,80 @@
 
       <tr>
         <td>Gender</td>
+
         <td>
+          <!---------------------------------------- Radio Buttons ---------------------------------------->
+
           <input type="radio" name="gender" value="male" id="male" />
           <label for="male">Male</label>
-          <input type="radio" name="gender" value="Female" id="female" />
+
+          <!-- 
+            <label> Element:
+            - Provides a clickable label for the radio button, enhancing accessibility and usability.
+            - Clicking the label will select the associated radio button.
+
+            **Radio Button Behavior**:
+            - Only one radio button with the same name can be selected at a time.
+            - Selecting another radio button with the same name will deselect the previously selected one.
+          -->
+
+          <input type="radio" name="gender" value="female" id="female" />
           <label for="female">Female</label>
         </td>
-      </tr>
 
+
+      </tr>
 
       <tr>
         <td>Country</td>
+
         <td>
-          <select name="" id="">
-            <option value="SelectCounty" disabled selected hidden>Select Country</option>
-            <option value="Bangladesh">Bangladesh</option>
+
+          <!----------------------------------- Dropdown ----------------------------------->
+          <select>
+            <option value="SelectCountry" disabled selected hidden>Select Country</option>
+            <option value="Bangladesh" >Bangladesh</option>
             <option value="Pakistan">Pakistan</option>
             <option value="Iran">Iran</option>
           </select>
+
+
+          <!-- 
+            <select> creates a drop-down list.
+            <option> Elements:
+            - Each <option> represents a choice in the list.
+            - The value attribute defines what value is sent upon form submission for that option.
+
+            Attributes:
+            - **disabled**: Prevents selection of the default option ("Select Country").
+            - **selected**: Sets the default option shown when the page loads.
+            - **hidden**: Hides the option from the dropdown list to prevent selection.
+          -->
 
         </td>
       </tr>
 
       <tr>
         <td>Fruit</td>
-        <td>
-          <input type="checkbox" id="mango" />
-          <label for="mango">mango</label>
-          <input type="checkbox" id="banana" />
-          <label for="banana">banana</label>
-        </td>
-      </tr>
 
+        <td>
+          <!------------------------------------------ Checkboxes ------------------------------------------>
+
+
+          <input type="checkbox" id="mango" name="fruit" value="mango" /> <label for="mango">Mango</label>
+
+          <!-- The label's "for" attribute links to the checkbox's id -->
+
+          <input type="checkbox" id="banana" name="fruit" value="banana" /> <label for="banana">Banana</label><br />
+
+          <!-- 
+            Radio buttons with the same name allow only one selection from a group.
+            Checkboxes with the same name allow multiple selections and send their values as an array.
+          -->
+
+        </td>
+
+      </tr>
 
 
       <tr>
@@ -77,10 +126,13 @@
 
     </table>
 
-    <hr />
+    <hr>
   </form>
 
-  <!------------------------- END  ------------------------->
+  <!------------------------- Extra ------------------------->
+
+  <hr />
+  <!------------------------- END ------------------------->
 
 </body>
 
