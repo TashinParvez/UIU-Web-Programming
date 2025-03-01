@@ -1,0 +1,83 @@
+* {
+  margine: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  /* tag */
+  color: blueviolet;
+  background-color: aquamarine;
+  padding: 3px;
+}
+
+.countyName {
+  /* class */
+  color: red;
+}
+
+.countyName + P {
+  /* Bellow of countryName */
+  color: rgba(6, 96, 174, 1);
+  background-color: yellow;
+  font-size: 33px;
+  padding: 12px;
+  margin: 10px;
+}
+.submitbtn {
+  font-size: 22px;
+  padding: 12px 22px 12px 22px;
+  margin-top: 30px;
+  background-color: yellow;
+  color: black;
+  broder: red, 20px;
+  border-radius: 20px;
+}
+
+.country-details {
+  color: RED;
+  height: 40px;
+}
+
+.listofitems {
+  background-color: blueviolet;
+  padding: 22px;
+  padding-left: 42px;
+  color: white;
+  width: 70%;
+}
+
+.imagesecheading {
+  font-size: 50px;
+  color: nevyblue;
+}
+
+.descofIMG {
+  color: darkred;
+  font-size: 23px;
+}
+
+#titleofgallery {
+  background-color: yellow;
+  padding-left: 30px;
+  color: darkred;
+}
+
+.btn2:hover {
+  background-color: blueviolet;
+}
+
+.btn2:hover::before {
+  background-color: blueviolet;
+}
+
+.btn2:hover::after {
+  content: "Hover";
+}
+
+
+
+.btn2:focus {
+  background-color: green;
+}
+
