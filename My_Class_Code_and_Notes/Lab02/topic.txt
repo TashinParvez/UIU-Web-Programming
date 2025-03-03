@@ -1,0 +1,35 @@
+📌 Week 2 – HTML & CSS Topics Covered
+
+1️⃣ CSS Integration & Styling  
+✔ External CSS –  <link rel="stylesheet" href="02btn.css">   
+✔ Internal CSS –  <style>...</style>   
+✔ Inline CSS –  style="background-color: coral;"
+✔ CSS Selectors  
+   - ID Selector –  #id { ... }   
+   - Class Selector –  .class { ... }   
+   - Universal Selector –  * { padding: 0; margin: 0; } 
+✔ Background Color –  background-color: green
+
+
+
+3️⃣ Forms & Input Elements
+✔ Number Input Field –  <input type="number">   
+✔ File Upload Input –  <input type="file">   
+✔ Textarea (Multiline Input) –  <textarea>...</textarea>   
+✔ Submit Button –  <input type="submit" value="SignUp">
+
+
+
+5️⃣ Images  
+✔ Image Tag –  <img src="" alt="" height="300vh" width="100%">
+
+
+
+-------------------------------------------------
+
+
+
+
+
+
+
