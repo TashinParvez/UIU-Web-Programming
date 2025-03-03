@@ -8,6 +8,8 @@ Hey, folks! 👋
 
 This repository is designed to help students taking the **Spring 25 CSE 4165 / CSE 465 (D): Web Programming** course at **United International University (UIU)**. Whether you're new to web development or looking for structured resources, this repository will serve as a **one-stop guide** for learning **HTML, CSS, JavaScript, PHP, and MySQL**.  
 
+##### My Web Notes : [🔗LINK](https://docs.google.com/document/d/1DJQAxsVs19zwLN7JP1DIeLjOxGJP3f68w03jHKtndfg/edit?tab=t.0#heading=h.tn5bxb7lssyg)
+
 ## 📌 How This Repository Can Help You  
 
 - **Quick Reference:** Easily find well-structured code and concepts, saving time on searching for online resources.  
