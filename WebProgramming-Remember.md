@@ -44,7 +44,7 @@
 
 ---
 
-- ### 🔹 Inline vs Block Elements in HTML
+## 🔹 Inline vs Block Elements in HTML
 
 - ### 📌 1. Block Elements
 
@@ -112,6 +112,26 @@
 <img src="logo.png" alt="Company Logo" />
 <input type="email" placeholder="Enter email" />
 ```
+
+---
+
+### 📌 Ordered HTML List - The Type Attribute
+
+| **Type**   | **Description**                                               |
+| ---------- | ------------------------------------------------------------- |
+| `type="1"` | The list items will be numbered with numbers (default)        |
+| `type="A"` | The list items will be numbered with uppercase letters        |
+| `type="a"` | The list items will be numbered with lowercase letters        |
+| `type="I"` | The list items will be numbered with uppercase Roman numerals |
+| `type="i"` | The list items will be numbered with lowercase Roman numerals |
+
+---
+
+<h5 > Understanding file paths </h5>
+
+[🔗 Go to this link 🔗](/Others/FilePath.md)
+
+---
 
 ---
 
