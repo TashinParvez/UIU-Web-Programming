@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Box Shadow Example</title>
     <style>
-        .box {
-            width: 200px;
-            height: 100px;
-            background-color: lightblue;
-            margin: 50px;
-            text-align: center;
-            line-height: 100px;
-            font-weight: bold;
-            font-size: 18px;
-            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        .container {
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            height: 300px;
+            background-color: lightgray;
         }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        
     </style>
 </head>
 
 <body>
-    <div class="box">Shadow Box</div>
+
+
+    <div class="container">
+        <div class="item"></div>
+    </div>
 </body>
 
 </html>

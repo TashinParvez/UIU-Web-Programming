@@ -1,5 +1,25 @@
+# **📌 CSS Notes**
+
+<h3 align="center"> A Guide to CSS Concepts & Best Practices </h3>
+
 ---
-<h1 align="center"> CSS </h1>
+
+## 📜 **Table of Contents**
+
+1. [CSS Selectors](#css-selectors)
+2. [CSS Units & Best Practices](#css-units--best-practices)
+   - [When to Use Which Unit?](#when-to-use-which-unit)
+   - [Examples of CSS Units](#examples-of-css-units)
+3. [CSS Properties](#css-properties)
+   - [Text Styling](#text-styling)
+   - [Backgrounds](#backgrounds)
+4. [Box Model & Box Shadows](#box-model--box-shadows)
+   - [Box Model (Margin, Padding, Border)](#box-model-margin-padding-border)
+   - [Box Shadows](#box-shadows)
+5. [CSS Positioning & Layout](#css-positioning--layout)
+   - [Display & Positioning](#display--positioning)
+   - [Flexbox for Layouts](#flexbox-for-layouts)
+
 ---
 
 # CSS Selectors
@@ -245,6 +265,8 @@ box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.4);
 }
 ```
 
+## CSS Layouts
+
 ---
 
 ### 📌 Display & Positioning
@@ -263,8 +285,6 @@ box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.4);
 }
 ```
 
-## CSS Layouts
-
 ---
 
 ## **Flexbox for Centering**
@@ -282,3 +302,87 @@ align-items: center;
 - `display: flex;` → Makes **Columns**(||).
 - `justify-content: center;` → Centers items **horizontally**.
 - `align-items: center;` → Centers items **vertically**.
+
+---
+
+`📌Question` I often get confused about when to use the following CSS properties:
+
+```css
+justify-content: center;
+align-items: center;
+text-align: center;
+```
+
+---
+
+### **Crystal Clear Explanation**
+
+1. **`justify-content: center;`** → **For Flexbox/Grid** → **Centers items horizontally**
+2. **`align-items: center;`** → **For Flexbox/Grid** → **Centers items vertically**
+3. **`text-align: center;`** → **For text inside a block element** → **Centers text horizontally**
+
+---
+
+### **1️⃣ `justify-content: center;` → Centers items Horizontally in Flexbox/Grid**
+
+📌 **Applies to:** `display: flex;` or `display: grid;`  
+📌 **Effect:** Moves child elements **horizontally to the center** of their container.
+
+#### ✅ **Example: Centering items in a row (Flexbox)**
+
+### **📝 Key Idea:**
+
+- Works when you have **`display: flex;`**.
+- Centers **multiple items horizontally** inside the container.
+
+---
+
+### **2️⃣ `align-items: center;` → Centers items Vertically in Flexbox/Grid**
+
+📌 **Applies to:** `display: flex;` or `display: grid;`  
+📌 **Effect:** Moves child elements **vertically to the center** of their container.
+
+### **📝 Key Idea:**
+
+- Works with **`display: flex;`**.
+- Moves items to the **center of the height** of the container.
+
+---
+
+### **3️⃣ `text-align: center;` → Centers Text Horizontally**
+
+📌 **Applies to:** `block` elements like `<p>`, `<div>`, `<h1>`, etc.  
+📌 **Effect:** Centers **inline text inside a block-level element**.
+
+#### ✅ **Example: Centering Text**
+
+```css
+.container {
+  text-align: center; /* Centers text inside this div */
+  background-color: lightgray;
+  width: 300px;
+}
+```
+
+```html
+<div class="container">
+  <p>Hello, World!</p>
+</div>
+```
+
+### **📝 Key Idea:**
+
+- Only works for **text and inline elements** inside block elements.
+- Does **not** move the container itself, only the text inside it.
+
+---
+
+💡 **Think of it like this:**
+
+| Property                   | What it Affects      | Works With     | Moves Things  | Works With                                  |
+| -------------------------- | -------------------- | -------------- | ------------- | ------------------------------------------- |
+| `justify-content: center;` | Horizontal alignment | Flexbox/Grid   | Left to Right | Flex/Grid containers (`display: flex/grid`) |
+| `align-items: center;`     | Vertical alignment   | Flexbox/Grid   | Top to Bottom | Flex/Grid containers (`display: flex/grid`) |
+| `text-align: center;`      | Text alignment       | Block elements | Inline Text   | Block elements (`div, p, td, etc.`)         |
+
+---
