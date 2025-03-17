@@ -29,6 +29,36 @@ This repository is designed to help students taking the **Spring 25 CSE 4165 / C
 ✔️ **Web APIs** - Connecting front-end and back-end  
 
 
+## Table of Contents
+
+- [CSS-Remember-Things.md](./CSS-Remember-Things.md)    
+- [HTML-Remember-Things.md](./HTML-Remember-Things.md)      
+- [Assignments-for-my-own/](./Assignments-for-my-own)     
+- [Faculty_given_Code__Class_Code/](./Faculty_given_Code__Class_Code)
+- [My_Class_Code_and_Notes/](./My_Class_Code_and_Notes)
+- [My_Prev_Code/](./My_Prev_Code)
+- [Others/](./Others)                   
+    - [extra.html](./Others/extra.html)           
+    - [FilePath.md](./Others/FilePath.md)           
+    - [Images](./Others/Images)
+    - [Shortcuts/](./Others/Shortcuts)               # Shortcuts and cheatsheets
+        - [VS code keyboard-shortcut.pdf](./Others/Shortcuts/VS%20code%20keyboard-shortcut.pdf)  
+        - [css](./Others/Shortcuts/css)
+        - [Js Notes](./Others/Shortcuts/Js%20Notes)
+- [PrevQSN/](./PrevQSN/)                   
+    - [Fall24/](./PrevQSN/Fall24)                 
+    - [Summer24/](./PrevQSN/Summer24)            
+- [Project/](./Project)
+
+
+## Previous Questions
+
+Here, I store previous semester questions for reference, helping with exam preparations. For example:
+
+- [Fall24](./PrevQSN/Fall24)  
+- [Summer24](./PrevQSN/Summer24)
+
+
 ## 🛠️ Contributing
 Contributions are welcome! If you have ideas, suggestions, or resources that could enhance this repository, feel free to submit a pull request or open an issue.
 
