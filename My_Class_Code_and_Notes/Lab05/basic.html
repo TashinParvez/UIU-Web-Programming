@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main_div {
+            color: white;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(72, 121, 60);
+            text-align: center;
+            /* take all to center */
+            /* border: 2px solid black; */
+            border-radius: 8px;
+            box-shadow: 2px 2px 2px rgba(20, 20, 20, .5);
+            /* margin-top: 20px 10px; */
+            margin: 20px 10px;
+        }
+
+        .parentDiv {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            background-color: aquamarine;
+
+        }
+
+        .secondDiv {
+            display: flex;
+            height: auto;
+            width: auto;
+            background-color: rgb(153, 255, 127);
+            justify-content: center;
+
+        }
+
+        .centerDiv {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 300px;
+            background-color: violet;
+            border-radius: 12px;
+        }
+
+        .centerDiv td input {
+            border-radius: 4px;
+            padding: 2px;
+        }
+
+        .loginBtn {
+            height: 30px;
+            width: 100px;
+            border-radius: 4px;
+            background-color: #02d8d8;
+            font: bold;
+            color: rgb(0, 0, 0);
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="main_div">
+        <p>hello</p>
+    </div> -->
+
+
+
+    <div class="parentDiv">
+        <div>Header</div>
+        <div class="secondDiv">
+
+            <div class="centerDiv">
+
+                <table>
+
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                        </td>
+                        <td>
+                            <input name="name" type="text"><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Password</label>
+                        </td>
+                        <td>
+
+                            <input name="password" type="password">
+                        </td>
+                    </tr>
+
+
+                    <tr align="center">
+                        <td colspan="2">
+                            <button class="loginBtn">Login</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+        <div>Footer</div>
+    </div>
+
+
+    <!-- 
+Grid & Flex
+---------------------
+
+column(||) - Flex
+Row(=) - Grid
+
+-->
+
+
+</body>
+
+</html>
