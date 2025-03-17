@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-weight: bolder;
+            font-family: monospace;
+        }
+
+        .parent-div {
+            background-image: linear-gradient(to right, #ff8a00, #da1b60);
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+
+            height: 370px;
+            width: 390px;
+
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+        }
+
+        .btn {
+            color: white;
+            background-color: #ff8a00;
+            border-radius: 20px;
+            height: 30px;
+            width: 76px;
+            border: none;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .profile-image {
+            height: 200px;
+            width: 200px;
+
+            border-radius: 100px;
+            border: 3px solid white;
+        }
+
+        .name {
+            font-size: 28px;
+        }
+
+        .designation {
+            font-size: 14px;
+            color: slategray
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent-div">
+        <div class="card">
+
+            <table>
+                <tr>
+                    <td>
+
+                        <img src="../../Others/Images/tashin.jpg" alt="" class="profile-image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <p class="name">Tashin Parvez</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <p class="designation">Web Developer | UI/UX Enthusiast </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <button class="btn">Follow</button>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
