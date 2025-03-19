@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset Default Margin & Padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Full-page Background */
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../../Others/Images/green-bg2.jpg');
+            /* Replace with any background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Glassmorphism Effect */
+        .login-box {
+            width: 300px;
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            /* Glass Effect */
+            background: rgba(255, 255, 255, 0.15);
+            /* Transparent White */
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        /* Login Title */
+        .login-box h2 {
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+        }
+
+        /* Input Fields */
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        /* Placeholder Text */
+        .login-box input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Login Button */
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* Button Hover Effect */
+        .login-box button:hover {
+            background-color: #d84315;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Sign In</button>
+    </div>
+
+</body>
+
+</html>
