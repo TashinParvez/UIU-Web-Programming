@@ -26,13 +26,17 @@
 
 Selectors are used to target HTML elements for styling.
 
-| Selector   | Example                         | Description                          |
-| ---------- | ------------------------------- | ------------------------------------ |
-| `*`        | `* { margin: 0; }`              | Targets all elements                 |
-| `element`  | `p { color: blue; }`            | Targets all `<p>` elements           |
-| `.class`   | `.text { font-size: 18px; }`    | Targets elements with `class="text"` |
-| `#id`      | `#title { font-weight: bold; }` | Targets an element with `id="title"` |
-| `grouping` | `h1, h2 { color: navy; }`       | Targets multiple elements            |
+| Selector            | Example                                     | Name                      | Description                                   |
+| ------------------- | ------------------------------------------- | ------------------------- | --------------------------------------------- |
+| `*`                 | `* { margin: 0; }`                          | Universal Selector        | Targets all elements                          |
+| `element`           | `p { color: blue; }`                        | Type Selector             | Targets all `<p>` elements                    |
+| `.class`            | `.text { font-size: 18px; }`                | Class Selector            | Targets elements with `class="text"`          |
+| `#id`               | `#title { font-weight: bold; }`             | ID Selector               | Targets an element with `id="title"`          |
+| `element, element`  | `h1, h2 { color: navy; }`                   | Grouping Selector         | Targets multiple elements                     |
+| `element element`   | `div p { color: red; }`                     | Descendant Selector       | Targets `<p>` inside `<div>`                  |
+| `element + element` | `h1 + p { margin-top: 10px; }`              | Adjacent Sibling Selector | Targets `<p>` immediately following an `<h1>` |
+| `element ~ element` | `h1 ~ p { color: gray; }`                   | General Sibling Selector  | Targets all `<p>` that follow `<h1>`          |
+| `[attribute=value]` | `input[type="text"] { border: 1px solid; }` | Attribute Value Selector  | Targets `input` elements with `type="text"`   |
 
 ---
 

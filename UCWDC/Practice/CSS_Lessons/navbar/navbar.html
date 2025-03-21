@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation Bar Variations</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #400c0c;
+    }
+
+    h2 {
+      color: white;
+      font-size: 28px;
+      /* scale: 28px; */
+      padding-top: 14px;
+      padding-bottom: 4px;
+    }
+
+    .nav-container {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .nav1 {
+      background-color: #9f9f9f;
+      padding: 20px;
+      font-size: 18px;
+      /* font-weight: ; */
+    }
+
+    .nav1 ul {
+      display: flex;
+      text-decoration: none;
+      justify-content: space-around;
+      color: black;
+    }
+
+    .nav1 a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    /*================= Hover effect on Nav-1 =================*/
+    .nav1 a::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(79, 79, 231);
+
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+
+    .nav1 a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav1 .login-btn {
+
+      background-color: rgb(79, 79, 231);
+      font-size: 14px;
+      color: white;
+
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: none;
+
+      cursor: pointer;
+    }
+
+    .nav1 .login-btn:hover {
+      background-color: rgb(34, 34, 145);
+    }
+
+
+    /*================= Works on Nav-2 =================*/
+
+    .nav2 {
+      width: 200px;
+      background-color: rgb(9, 56, 9);
+
+      padding: 36px;
+      margin-left: 12px;
+
+    }
+
+    .nav2 li {
+      padding: 8px 10px;
+      margin-bottom: 30px;
+    }
+
+    .nav2 li:hover {
+      background-color: #1b7b01;
+
+    }
+
+    .nav2 a {
+      text-decoration: none;
+      color: white;
+      font-size: x-large;
+    }
+
+    .nav2 .login-btn {
+      padding: 8px 10px;
+      background-color: rgb(0, 88, 3);
+      color: white;
+      font-size: x-large;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .nav2 .login-btn:hover {
+      background-color: #1b7b01;
+    }
+
+
+    /*================= Works on Nav-3 =================*/
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="nav-container">
+    <h2>Variation 1: Horizontal with underline effect</h2>
+    <nav class="nav1">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><button class="login-btn">Login</button></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nav-container">
+    <h2>Variation 2: Vertical with hover effect</h2>
+    <nav class="nav2">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+      </ul>
+      <button class="login-btn">Login</button>
+    </nav>
+  </div>
+
+  <div class="nav-container">
+    <h2>Variation 3: Horizontal with dropdown</h2>
+    <nav class="nav3">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <div class="dropdown-content">
+            <a href="#">Our Story</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+          </div>
+        </li>
+        <li><a href="#">Products</a></li>
+        <li><button class="login-btn">Login</button></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+
+</html>
