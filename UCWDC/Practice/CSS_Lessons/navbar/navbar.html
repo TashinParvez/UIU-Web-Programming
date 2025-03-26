@@ -33,6 +33,8 @@
       list-style-type: none;
     }
 
+    /*================= Works on Nav-1 =================*/
+
     .nav1 {
       background-color: #9f9f9f;
       padding: 20px;
@@ -55,7 +57,7 @@
       padding-bottom: 4px;
     }
 
-    /*================= Hover effect on Nav-1 =================*/
+    /*=========== Hover effect on Nav-1 ===========*/
     .nav1 a::after {
       content: "";
       position: absolute;
@@ -73,9 +75,13 @@
       transform: scaleX(1);
     }
 
+
+
+
+
     .nav1 .login-btn {
 
-      background-color: rgb(79, 79, 231);
+      background-color: rgb(32, 32, 69);
       font-size: 14px;
       color: white;
 
@@ -133,14 +139,60 @@
     }
 
 
+
     /*================= Works on Nav-3 =================*/
 
 
+    .nav3 {
+      background-color: #92db6f;
+      height: 60px;
+
+      display: flex;
+      align-items: center;
+    }
+
+    .nav3 ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+
+    }
+
+    .nav3 ul a {
+      color: black;
+      font-size: 20px;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+
+    .dropdown-content {
+      display: none;
+      text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+      color: rgb(255, 255, 255);
+      display: block;
+      display: grid;
+      position: absolute;
+
+      background-color: #3e3e3e;
+      min-width: 150px;
+    }
+
+    .nav3 ul a:hover {
+      color: #fb0000;
+    }
   </style>
 
 </head>
 
 <body>
+
+
+  <!-- -------- NAV 1 ---------- -->
   <div class="nav-container">
     <h2>Variation 1: Horizontal with underline effect</h2>
     <nav class="nav1">
@@ -153,6 +205,7 @@
     </nav>
   </div>
 
+  <!-- --------NAV 2---------- -->
   <div class="nav-container">
     <h2>Variation 2: Vertical with hover effect</h2>
     <nav class="nav2">
@@ -164,6 +217,8 @@
       <button class="login-btn">Login</button>
     </nav>
   </div>
+
+  <!-- --------NAV 3---------- -->
 
   <div class="nav-container">
     <h2>Variation 3: Horizontal with dropdown</h2>
@@ -183,6 +238,10 @@
       </ul>
     </nav>
   </div>
+
+
+
+
 </body>
 
 </html>

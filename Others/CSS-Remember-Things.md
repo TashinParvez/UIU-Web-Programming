@@ -26,27 +26,34 @@
 
 Selectors are used to target HTML elements for styling.
 
-| Selector            | Example                                     | Name                      | Description                                   |
-| ------------------- | ------------------------------------------- | ------------------------- | --------------------------------------------- |
-| `*`                 | `* { margin: 0; }`                          | Universal Selector        | Targets all elements                          |
-| `element`           | `p { color: blue; }`                        | Type Selector             | Targets all `<p>` elements                    |
-| `.class`            | `.text { font-size: 18px; }`                | Class Selector            | Targets elements with `class="text"`          |
-| `#id`               | `#title { font-weight: bold; }`             | ID Selector               | Targets an element with `id="title"`          |
-| `element, element`  | `h1, h2 { color: navy; }`                   | Grouping Selector         | Targets multiple elements                     |
-| `element element`   | `div p { color: red; }`                     | Descendant Selector       | Targets `<p>` inside `<div>`                  |
-| `element + element` | `h1 + p { margin-top: 10px; }`              | Adjacent Sibling Selector | Targets `<p>` immediately following an `<h1>` |
-| `element ~ element` | `h1 ~ p { color: gray; }`                   | General Sibling Selector  | Targets all `<p>` that follow `<h1>`          |
-| `[attribute=value]` | `input[type="text"] { border: 1px solid; }` | Attribute Value Selector  | Targets `input` elements with `type="text"`   |
+| Selector             | Example                                     | Name                           | Description                                                                    | Important |
+| -------------------- | ------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------ | --------- |
+| `*`                  | `* { margin: 0; }`                          | Universal Selector             | Targets **all** elements                                                       | ⭐        |
+| `element`            | `p { color: blue; }`                        | Type Selector                  | Targets **all** `<p>` elements                                                 | ⭐        |
+| `.class`             | `.text { font-size: 18px; }`                | Class Selector                 | Targets **all** elements with `class="text"`                                   | ⭐        |
+| `#id`                | `#title { font-weight: bold; }`             | ID Selector                    | Targets **only one** element with `id="title"`                                 | ⭐        |
+| `element, element`   | `h1, h2 { color: navy; }`                   | Grouping Selector              | Targets **all** specified elements                                             | ⭐        |
+| `element element`    | `div p { color: red; }`                     | **Descendant Selector**        | Targets **all** `<p>` inside `<div>`                                           | ⭐⭐      |
+| `element > element`  | `div > p { color: green; }`                 | Child Selector                 | Targets **all** `<p>` that are direct children of `<div>`                      |           |
+| `element + element`  | `h1 + p { margin-top: 10px; }`              | Adjacent Sibling Selector      | Targets **the first** `<p>` immediately after an `<h1>`                        |           |
+| `element ~ element`  | `h1 ~ p { color: gray; }`                   | General Sibling Selector       | Targets **all** `<p>` that follow `<h1>`<br> [means, all `<h1>`'s `<p>` child] |           |
+| `[attribute]`        | `[disabled] { opacity: 0.5; }`              | Attribute Selector             | Targets **all** elements with the `disabled` attribute                         |           |
+| `[attribute=value]`  | `input[type="text"] { border: 1px solid; }` | Attribute Value Selector       | Targets **all** `input` elements with `type="text"`                            |           |
+| `[attribute^=value]` | `a[href^="https"] { color: green; }`        | Attribute Starts With Selector | Targets **all** `<a>` where `href` starts with `"https"`                       |           |
+| `[attribute$=value]` | `img[src$=".png"] { border: none; }`        | Attribute Ends With Selector   | Targets **all** `<img>` where `src` ends with `".png"`                         |           |
+| `[attribute*=value]` | `div[class*="box"] { padding: 10px; }`      | Attribute Contains Selector    | Targets **all** `<div>` where `class` contains `"box"`                         |           |
+
+- ### Know more about Selectors: [🔗LINK](CSS-Selectors.md)
 
 ---
 
-- ### 📌 Best Practices for CSS Units
+### 📌 Best Practices for CSS Units
 
-  ✅ **Use `px`** for fixed UI components.  
-  ✅ **Use `%`** for flexible layouts.
-  ✅ **Use `em`** for local scaling of fonts and spacing.  
-  ✅ **Use `rem`** for consistent, global typography.  
-  ✅ **Use `vw` & `vh`** for full-screen elements.
+✅ **Use `px`** for fixed UI components.  
+ ✅ **Use `%`** for flexible layouts.
+✅ **Use `em`** for local scaling of fonts and spacing.  
+ ✅ **Use `rem`** for consistent, global typography.  
+ ✅ **Use `vw` & `vh`** for full-screen elements.
 
 - ### 🎯 When to Use Which Unit?
 
@@ -65,9 +72,47 @@ Use a mix of `rem`, `%`, and `vw/vh` instead of px. This keeps your design respo
 - ✔ Use rem for global font sizes → Ensures consistent scaling across your site.
 - ✔ Use em for local elements → Lets nested elements scale independently.
 
+### 📌 Best Practices [Important]
+
+- ```css
+  padding: 10px 20px 10px 20px; /* called trbl = top right bottom left */
+  ```
+
+- ### Margin Collapsing in CSS
+
+  Margin collapsing is a behavior in CSS where vertical margins of adjacent elements merge into a single margin instead of adding up.
+
+  ## Example
+
+  ```css
+  .div1 {
+    margin-bottom: 30px;
+    background: lightblue;
+  }
+
+  .div2 {
+    margin-top: 20px;
+    background: lightcoral;
+  }
+  ```
+
+Even though `.div1` has `margin-bottom: 30px;` and `.div2` has `margin-top: 20px;`, the actual space between them will be **30px** (not **50px**) because the margins collapse to the larger value.
+
+![Margin Collapsing](https://miro.medium.com/v2/resize:fit:421/0*kAD00byJs8jdmXvr.png)
+
+- ## Best way to write box-sizing property
+
+  ```css
+  *,
+  *::after,
+  *::before {
+    box-sising: border-box;
+  }
+  ```
+
 ---
 
-#### 🔥 1. px (Pixels) – Fixed Size
+#### 1. px (Pixels) – Fixed Size
 
 ```css
 button {
@@ -75,15 +120,17 @@ button {
 }
 ```
 
-#### 🌍 2. % (Percentage) – Relative to Parent
+````
+
+#### 2. % (Percentage) – Relative to Parent
 
 ```css
 .container {
   width: 80%; /* 80% of the parent width */
 }
-```
+````
 
-#### 🔠 3. em (Relative to Element's Font Size)
+#### 3. em (Relative to Element's Font Size)
 
 ```css
 .parent {
@@ -184,6 +231,14 @@ background-position: center;
 
 ```css
 background-image: linear-gradient(to right, gold, silver, gold);
+
+background: linear-gradient(
+  45deg,
+  rgba(85, 112, 220, 0.5),
+  rgba(224, 34, 157, 0.5),
+  rgba(117, 210, 12, 0.5),
+  rgba(170, 31, 31, 0.5)
+);
 ```
 
 ```css
@@ -269,7 +324,14 @@ box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.4);
 }
 ```
 
-## CSS Layouts
+---
+
+---
+
+<h1 style="text-align: center;">CSS Positioning & Layout</h1>
+<!--KEYWORDS:  flexbox -->
+
+---
 
 ---
 
@@ -286,6 +348,42 @@ box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 10px;
   right: 10px;
+}
+```
+
+---
+
+### **block** and **inline** elements in HTML:
+
+| Feature                               | Block Elements                                                                        | Inline Elements                                                                   |
+| ------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Definition**                        | Take up the full width available and start on a new line.                             | Take up only as much width as necessary and stay on the same line.                |
+| **Starts on a new line?**             | Yes                                                                                   | No                                                                                |
+| **Width and Height**                  | Can be set explicitly.                                                                | Only width and height of content are considered.                                  |
+| **Common Examples**                   | `<div>`, `<p>`, `<h1>` to `<h6>`, `<ul>`, `<li>`, `<table>`, `<section>`, `<article>` | `<span>`, `<a>`, `<strong>`, `<em>`, `<img>`, `<code>`, `<b>`, `<i>`              |
+| **Can contain other block elements?** | Yes                                                                                   | No (mostly contains text or other inline elements)                                |
+| **Box Model Behavior**                | Margins, padding, and borders affect the full width.                                  | Margins and padding apply only to left and right, not top and bottom as expected. |
+| **Usage**                             | Used for structuring layouts and main sections.                                       | Used for styling parts of text within a block element.                            |
+
+---
+
+## Flexbox
+
+- main Axis and other Axis/Cross Axis
+- main Axis is ➡ left to right [IN web]
+- main Axis is ➡ Top To bottom [IN APP]
+
+```css
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  align-content: space-around;
 }
 ```
 
