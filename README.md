@@ -59,9 +59,10 @@ Here, I store previous semester questions for reference, helping with exam prepa
 - [Summer24](./PrevQSN/Summer24)
 
 
-## 🛠️ Contributing
-Contributions are welcome! If you have ideas, suggestions, or resources that could enhance this repository, feel free to submit a pull request or open an issue.
+### 🛠️ My VS-Code Setup : [Link](https://github.com/TashinParvez/When-I-sit-on-a-new-pc)
 
+## 🏡 Contributing
+Contributions are welcome! If you have ideas, suggestions, or resources that could enhance this repository, feel free to submit a pull request or open an issue.
 
 ## 📞 Contact
 For any questions, suggestions, or feedback, please feel free to reach out to the repository maintainer.
