@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+
+            background-color: #1E1E2E;
+            font-family: Arial, Helvetica, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .card {
+            background-color: #D3CCE3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 400px;
+            width: 350px;
+
+            padding: 30px;
+
+            box-shadow: 0px 0px 20px rgba(121, 184, 27, 0.383);
+            border-radius: 20px;
+        }
+
+        .profile-picture {
+            width: 100px;
+            border-radius: 50%;
+            border: 6px solid #7d788921;
+
+        }
+
+        .left {
+            height: 100%;
+
+            display: grid;
+            align-items: start;
+
+            padding-right: 20px;
+        }
+
+
+        .right {
+            width: 100%;
+            height: 100%;
+
+            display: grid;
+            align-items: start;
+
+            padding-top: 40px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+
+        .show-more {
+            padding: 12px 20px;
+            border-radius: 23px;
+            border: 2px solid rgba(118, 113, 129, 0.717);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="left">
+            <img src="../../../../Others/Images/tashin.jpg" class="profile-picture" alt="">
+        </div>
+        <div class="right">
+
+            <div class="name">
+                <h3>Md.Tashin Parvez</h3>
+                <div class="degignation">Competitive Programmer</div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-regular fa-star" style="display: inline-block;"></i>
+                <p style="display: inline-block;">4.7 Rating </p>
+            </div>
+            <div class="review">
+                <i class="fa-solid fa-shield" style="display: inline-block;"></i>
+                <p style="display: inline-block;">4,447 Reviews </p>
+            </div>
+            <div class="stud">
+                <i class="fa-regular fa-user" style="display: inline-block;"></i>
+                <p style="display: inline-block;">478 Students </p>
+            </div>
+
+            <div class="desc">
+                <p style="display: inline-block;"> I am a Computer Science & Engineering student at United International
+                    University (UIU), Bangladesh,
+                    with a strong passion for </p>
+            </div>
+
+            <button class="show-more">Show more</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
