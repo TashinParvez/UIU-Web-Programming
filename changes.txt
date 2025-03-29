@@ -1,0 +1,3 @@
+MM git-auto.bat
+M  try.html
+?? changes.txt
