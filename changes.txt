@@ -1,3 +1,7 @@
-MM git-auto.bat
-M  try.html
-?? changes.txt
+ M .gitignore
+ M "My_Class_Code_and_Notes/Practice For MID/LinkedIn UI Code/index.html"
+ D "My_Class_Code_and_Notes/Practice For MID/LinkedIn UI Code/notes.txt"
+ M "My_Class_Code_and_Notes/Practice For MID/LinkedIn UI Code/style.css"
+ M Others/notes.txt
+ M changes.txt
+?? "My_Class_Code_and_Notes/Practice For MID/LinkedIn UI Code/assets/microsoft.png"
