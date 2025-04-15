@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebok-login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #F2F4F7;
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+
+        .left {
+            height: 200px;
+
+            padding-right: 20px;
+
+        }
+
+        h2 {
+            color: #1877F2;
+
+            font-size: 72px;
+        }
+
+
+        .left p {
+            color: black;
+            font-size: 34px;
+        }
+
+        hr {
+            margin: 27px 0px;
+            color: #ebe3e3;
+            background-color: red;
+        }
+
+        .right {
+            padding: 26px;
+            margin-left: 20px;
+            /*    height: 200px;*/
+            /*  width: 200px; */
+
+
+
+        }
+
+        .right-upper-div {
+
+            box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.4);
+            padding: 26px;
+            border-radius: 10px;
+            margin-left: 20px;
+            background-color: #FFFFFF;
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        input {
+            padding: 18px;
+            font-size: 19px;
+            margin-bottom: 12px;
+            color: #DDDFE2;
+            border-radius: 9px;
+            border: 1px solid #DDDFE2;
+            width: 410px;
+        }
+
+        .login {
+            padding: 18px;
+            font-size: 19px;
+            margin-bottom: 12px;
+            color: white;
+            background-color: #1877F2;
+            border-radius: 9px;
+            border: 1px solid gray;
+            width: 448px;
+
+            font-weight: bold;
+        }
+
+        .account-create {
+            padding: 18px;
+            font-size: 19px;
+            margin-bottom: 12px;
+            color: white;
+            background-color: #42B72A;
+            border-radius: 9px;
+            border: 1px solid gray;
+            width: 216px;
+
+            text-align: center;
+
+        }
+
+        .create-page {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .forgetpass {
+            text-decoration: none;
+            color: #1877F2;
+        }
+
+        .create {
+            text-decoration: none;
+            color: black;
+
+            font-weight: bold;
+        }
+
+        .create-page {
+            color: black;
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="left">
+        <h2>facebook</h2>
+        <p style="font-weight: 100;">Facebook helps you connect and share <br>with the people in your life.</p>
+    </div>
+
+    <!-- ========================== -->
+    <div class="right">
+        <div class="right-upper-div"
+            style="display: grid; justify-content: center; align-items: center; text-align: center;">
+            <input type="email" name="" id="" placeholder="Email address or Phone number">
+            <input type="password" name="" id="" placeholder="Password">
+
+            <button class="login">Log in</button><br>
+            <a class="forgetpass" href="http://">Forgotten password?</a>
+            <hr>
+            <div>
+                <button class="account-create">Create New Account</button>
+            </div>
+        </div>
+
+        <p class="create-page"><a class="create" href="http://">Create a Page</a> for a celebrity, brand or business.
+        </p>
+    </div>
+
+</body>
+
+</html>
