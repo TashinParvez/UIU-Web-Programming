@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>No Wrapper Layout</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Header with flexbox */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Main layout with grid */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Equal columns */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  flex: 1;
+  /* height: 100vh; */
+}
+
+/* Section styling */
+.left-section, .right-section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">Logo</div>
+    <div class="header-right">Menu</div>
+  </header>
+
+  <main>
+    <section class="left-section">Left Content
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Left
+    </section>
+    <section class="right-section">Right Content</section>
+  </main>
+
+  <footer>
+    &copy; 2025 My Website
+  </footer>
+</body>
+</html>

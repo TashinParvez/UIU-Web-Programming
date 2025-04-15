@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flex + Grid Layout</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Main layout grid */
+.page-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header | body | footer */
+  height: 100vh;
+}
+
+/* Header: flex for left-right */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Body: two-column grid */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Equal width columns */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+/* Left section (sidebar) */
+.left-section, .right-section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="header-left">Logo</div>
+      <div class="header-right">Menu</div>
+    </header>
+
+    <div class="main-content">
+      <aside class="left-section">Sidebar / Navigation</aside>
+      <section class="right-section">Main Content Area</section>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 My Website
+    </footer>
+  </div>
+</body>
+</html>

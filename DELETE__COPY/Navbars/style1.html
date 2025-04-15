@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style 1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .nav {
+            height: 68px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1A1A1A;
+        }
+
+        .icon {
+            width: 20px;
+        }
+
+        .nav-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 0px 0px 22px;
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 22px 0px 0px;
+        }
+
+        .nav-center {
+            width: 344px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav-left">
+            <img class="icon" src="icon.svg" alt="">
+            <p>Brand-Name</p>
+        </div>
+
+        <div>
+            <ul class="nav-center">
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Menu</li>
+                <li>Pages</li>
+                <li>Contact</li>
+            </ul>
+
+        </div>
+
+        <div class="nav-right ">
+            <button class="book-table-btn">Book Table</button>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

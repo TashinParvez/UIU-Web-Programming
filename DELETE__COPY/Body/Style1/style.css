@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav {
+  height: 68px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.icon {
+  width: 20px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 0px 22px;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 22px 0px 0px;
+}
+
+.nav-center {
+  width: 344px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*----------------- BODY -----------------*/
+
+
+
+
+
+
+
+
+

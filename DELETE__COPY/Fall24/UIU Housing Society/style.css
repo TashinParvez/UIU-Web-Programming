@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+li * {
+  cursor: pointer;
+}
+li {
+  padding: 2px 13px;
+}
+.green-color {
+  background-color: #0ca678;
+}
+
+.border-none{
+    border: none;
+
+}
+.body {
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 55px;
+  width: 1754px;
+  position: absolute;
+  top: 20px;
+  left: 7vh;
+  z-index: 1000;
+  /* margin: auto; */
+  border: 1px solid black;
+}
+
+.logo {
+  height: auto;
+  width: 53px;
+}
+.title {
+  color: #0ca678;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------NAV END ------------- */
+
+/* ---------------- Body ------------- */
+.main-body {
+  height: 85vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------- LEFT ------------- */
+.left {
+  padding: 0px 130px;
+  align-items: center;
+  display: grid;
+  width: 50vw;
+  justify-content: center;
+}
+.explore-uiu {
+  font-weight: bolder;
+  color: white;
+  width: 101px;
+  padding: 10px 5px;
+  border-radius: 8px;
+}
+
+/* ----------------right  ------------- */
+.right {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  object-fit: cover;
+  align-items: center;
+}
+
+.slider {
+  left: 51vw;
+  position: absolute;
+  padding: 11px 15px;
+}
+.right-img {
+  width: 915px;
+  height: 85%;
+}
+.prev {
+  top: 55vh;
+}
+.slider {
+  border-radius: 20px;
+}
+
+/* ---------------- Footer------------- */
+
+.footer {
+  height: 85px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.search-key {
+}
+
+.PROPERTY-Type {
+  margin: 0px 24px;
+}
+
+.Location {
+  margin: 0px 24px 0px 0px;
+}

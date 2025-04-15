@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+    /* height: 100vh; */
+    /* height: 1000px; */
+}
+.navbar{
+    height: 55px;
+    width: 90%;
+    /* width: 1700px; */
+    background-color: rgb(255, 255, 255);
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center;
+    justify-content: center; */
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    z-index: 1;
+
+}
+.navbar-left-section{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* color: rgb(0, 0, 0); */
+    
+    /* width: 500px; */
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.logo-text{
+    font-size: 30px;
+    font-weight: bold;
+    color:#0ca678;
+    width: 300px;
+    /* min-width: 220px; */
+
+}
+.navbar-right-section{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+.navbar-right-section a,.select-item{
+    font-family: Arial;
+    color: black;
+    font-size: 15px;
+      padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+   
+    margin-right: 10px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+a.home-page{
+    color: #0ca678;
+   
+}
+a.visit-ucam-page{
+    background-color: #0ca678;
+    color: white;
+    width: 100px;
+    text-align: center;
+
+    
+}
+
+
+
+
+
+
+/* 
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #878787;
+    height: 90vh;
+} */
+/* .container-left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #8be7e5;
+    height: 90vh;
+}
+.container-left-section h1{
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 410px;
+}
+.header-color{
+    color: #0ca678;
+}
+.disription-text{
+    font-size: 12px;
+    color: rgb(161, 161, 161);
+    margin-bottom: 20px;
+    width: 410px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: Arial;
+}
+.explore-btn{
+    background-color: #0ca678;
+    color: white;
+ text-decoration: none;
+ border: none;
+ padding: 10px 20px;
+    text-align: center;
+   
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: #878787;
+    
+} */
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+} 
+
+
+
+
+.container-left-section{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+
+
+}
+.container-left-section h1{
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 410px;
+}
+.header-color{
+    color: #0ca678;
+}
+.disription-text{
+    font-size: 12px;
+    color: rgb(161, 161, 161);
+    margin-bottom: 20px;
+    width: 410px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: Arial;
+}
+.explore-btn{
+    background-color: #0ca678;
+    color: white;
+ text-decoration: none;
+ border: none;
+ padding: 10px 10px;
+    text-align: center;
+    width: 110px;
+    border-radius: 5px;
+   
+}
+
+.container-right-section{
+    display: grid;
+    align-items: center;
+    /* justify-content: center; */
+
+    
+    /* width: 100%;
+   
+    background-image: url(wipliance-jaymarc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image-size: 100%; */
+    position: relative;
+
+}
+.house-image{
+    width: 100%;
+    /* height: 85vh; */
+    min-height: 90vh;
+
+    /* background-image: url(wipliance-jaymarc.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.carousel-buttons {
+    position: absolute;
+    /* top: 50%; */
+    left: -15px;
+    /* right: 0; */
+    
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* transform: translateY(-50%); */
+  }
+  
+  .carousel-buttons button {
+    background-color: #0ca678;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+ /* .footer{
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+} */
+
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background-color: #0ca678;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .search-bar input,
+  .search-bar select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+  }
+  
+  .search-bar button {
+    background-color: #022c22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
