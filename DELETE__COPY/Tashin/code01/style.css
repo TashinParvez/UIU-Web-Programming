@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*------------ Body ------------*/
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*------------ Navbar ------------*/
+.title-name {
+  color: #ff4419;
+  padding: 0px 0px 0px 20px;
+}
+
+.nav {
+  background-color: rgb(0, 255, 21);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 73px;
+}
+
+/*-------------------- UPPER NAV-------------------- */
+.upper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+.uppernav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 0px 20px 0px 0px;
+}
+.sighup-btn {
+  color: #fffefd;
+  background-color: #ff4419;
+  padding: 6px 11px;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+/*-------------------- Lower NAV-------------------- */
+
+.lower-nav {
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+
+  padding: 0px 0px 0px 20px;
+}
+
+.reserce-select {
+  border: none;
+  background-color: rgb(0, 255, 21);
+}
+
+/*  -------------------------- BODY-main -------------------->*/
+.main-body {
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.free-web {
+  padding: 31px 0px;
+}
+
+/* -------cards------ */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 112px;
+  margin: 0px 0px 110px 0px;
+}
+
+.card {
+  border: 1px solid black;
+  box-shadow: 7px 9px 4px 4px green;
+  padding: 41px 21px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  background-image: url(/web_mid_resource/1.svg);
+  background-size: cover;
+  background-position: center;
+
+  height: 20px;
+  width: 20px;
+}
+
+.flex-dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-btn-icon {
+  background-image: url(/web_mid_resource/1.svg);
+  background-size: cover;
+  background-position: center;
+
+  height: 20px;
+  width: 20px;
+
+  padding-right: 2px;
+}
+
+.card-p1 {
+  padding: 0px 24px 0px 0px;
+}
+
+.money p {
+  font-size: 34px;
+}
+.card button {
+  margin-right: 7px;
+  margin-bottom: 24px;
+  padding: 5px 7px;
+  background-color: #1d78f0;
+
+  cursor: pointer;
+}
+/* ----------------------- footer ------------------------ */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

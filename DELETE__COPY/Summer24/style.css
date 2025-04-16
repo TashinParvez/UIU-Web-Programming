@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --------- NAV BAR ------------ */
+
+.company-name span {
+  color: #ff545a;
+}
+.company-name {
+  font-size: 34px;
+  font-weight: bold;
+  padding: 0px 0px 0px 24px;
+}
+
+.nav {
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+/*============== mainbody ==============*/
+.main-body {
+  width: 100vw;
+  height: 673px;
+
+  background-image: url(/bg-image-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------second-body-------------- */
+
+.second-body {
+  width: 68vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: -74px;
+}
+
+.card {
+  height: 151px;
+  width: 186px;
+  background-color: rgb(97, 128, 82);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card .name
+{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card .card-icon {
+  height: 41px;
+  width: 41px;
+  background-image: url(assets/1.svg);
+}
+
+
+
