@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Num-1: <input type="text" id="txt1"><br>
+
+    <button onclick="calculate('r')">Reverse</button>
+    <button onclick="calculate('p')">Palindrome Check</button>
+
+    <br>
+
+    Result: <label id="lbl1"></label>
+</body>
+<script>
+
+    function calculate(op) {
+        let x = Number(document.getElementById('txt1').value);
+        let xcpy = x;
+
+        let result = 0;
+
+
+        while (x) {
+            let temp = x % 10;
+            result *= 10;
+            result += temp;
+            x = Math.floor(x / 10);
+        }
+
+        // reverse
+        if (op == 'r') {
+            document.getElementById('lbl1').innerText = result;
+        }
+        // palindrome
+        else if (op == 'p') {
+
+            if (result == xcpy) {
+                document.getElementById('lbl1').innerText = "YES";
+            } else {
+                document.getElementById('lbl1').innerText = "NO";
+            }
+
+        }
+
+    }
+
+</script>
+
+</html>

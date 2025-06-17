@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Combinations</title>
+</head>
+
+<body>
+    <input type="text" name="" id="input1">
+    <button onclick="combinationsGenerator()"> GENERATE </button>
+
+    <p>Generated Combinations: </p> <label for="" id="ans"></label>
+
+</body>
+<script>
+    function combinationsGenerator() {
+        let str = String(document.getElementById("input1").value);
+
+        let ansStr = "";
+
+        for (let i = 0; i < str.length; i++) {
+
+            let temp = str[i];
+            ansStr += temp + " ";
+
+            for (let j = i + 1; j < str.length; j++) {
+                temp += str[j]
+                ansStr += temp + " ";
+            }
+        }
+
+        document.getElementById("ans").innerText = ansStr;
+    }
+</script>
+
+</html>

@@ -8,26 +8,20 @@
 </head>
 
 <body>
-
     Num-1: <input type="text" id="txt1"><br>
     Num-2: <input type="text" id="txt2"><br>
-
     <button onclick="calculate('+')">+</button>
     <button onclick="calculate('-')">-</button>
     <button onclick="calculate('*')">*</button>
     <button onclick="calculate('/')">/</button><br>
-
-    Result: <label id="lbl"></label>
+    Result: <label id="lbl1"></label>
 
 </body>
-
-<!-- <script>
+<script>
     function calculate(op) {
         let x = Number(document.getElementById('txt1').value);
         let y = Number(document.getElementById('txt2').value);
-
         let result;
-        
         if (op == '+') {
             result = x + y;
         }
@@ -40,10 +34,8 @@
         else if (op == '/') {
             result = x / y;
         }
-
-        document.getElementById('lbl').innerText = result;
+        document.getElementById('lbl1').innerText = result;
     }
-
-</script> -->
+</script>
 
 </html>
