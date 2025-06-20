@@ -7,6 +7,8 @@ document.getElementById('lbl1').innerText = "YES";
 
 ==============
 
+alert("palindrome");
+
 
 
 

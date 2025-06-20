@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="text1">
+    <button onclick="strSort()">Sort String</button><br>
+    <label id="sortedStr"></label>
+</body>
+<script>
+    function strSort() {
+        
+        let str = String(document.getElementById('text1').value);
+        str = str.split('').sort().join('');
+
+        document.getElementById('sortedStr').innerText = str;
+    }
+</script>
+
+</html>
