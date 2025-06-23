@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="bill.php" method="post" enctype="multipart/form-data">
+
+        Location: <select name="Location" id="">
+            <option value="" selected disabled hidden>Select Location</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Khulna">Khulna</option>
+        </select> <br>
+        area:
+        <input type="radio" name="area" id="" value="Urban">
+        <label for="Urban">Urban</label>
+        <input type="radio" name="area" id="" value="Rural">
+        <label for="Rural">Rural</label>
+        <br>
+
+        Unit Consumption: <input type="text" name="Unit" id="">
+        <br>
+
+        <button>Calculate Bill</button>
+
+    </form>
+</body>
+
+</html>

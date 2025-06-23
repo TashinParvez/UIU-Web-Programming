@@ -30,7 +30,7 @@
 
         let result = weight / (height * height);
 
-        document.getElementById('result').innerHTML = result;
+        document.getElementById('result').innerHTML = result.toFixed(2);
 
         if (result > 0 && result < 20) {
             document.getElementById('status').innerHTML = 'bad';
