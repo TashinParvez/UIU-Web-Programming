@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Toggle Text Color</title>
+    <style>
+        #myText {
+            font-size: 24px;
+            color: black;
+            /* initial color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="myText">This is a toggle-able text!</p>
+    <button onclick="toggleColor()">Change Color</button>
+
+    <script>
+        
+        let isRed = false;
+
+        function toggleColor() {
+
+            let text = document.getElementById("myText");
+
+            //  ============== WHAT I HAVE INSIDE 'text'  ==============
+            // text.style.color = "red";         // Change its text color
+            // text.innerText = "Changed Text!"; // Change what it says
+            // text.style.fontSize = "30px";     // Change font size
+            // =========================================================
+
+
+            if (isRed) {
+                text.style.color = "black"; // back to default
+                text.innerText = "NOW BLACK";
+            } else {
+                text.style.color = "red";   // changed color
+                text.innerText = "NOW RED";
+            }
+
+            isRed = !isRed; // flip the switch
+        }
+    </script>
+
+</body>
+
+</html>

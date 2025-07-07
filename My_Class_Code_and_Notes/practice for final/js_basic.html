@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    input 1: <input type="text" name="" id="i1"> <br>
+    input 2: <input type="text" name="" id="i2"> <br>
+
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button> <br>
+
+    result: <label for="" id="resultLbl"></label>
+
+</body>
+
+<script>
+
+    function calculate(op) {
+
+        // document.getElementById('resultLbl').innerText = "TSAHIN YOU DIT IT";
+
+        let var1 = Number(document.getElementById('i1').value);
+        let var2 = Number(document.getElementById('i2').value);
+        let result;
+
+        if (op == '+') {
+            result = var1 + var2;
+        } else if (op == '-') {
+            result = var1 - var2;
+        } else if (op == '*') {
+            result = var1 * var2;
+        } else if (op == '/') {
+            result = var1 / var2;
+        }
+
+        document.getElementById('resultLbl').innerText = result;
+
+    }
+
+
+</script>
+
+</html>

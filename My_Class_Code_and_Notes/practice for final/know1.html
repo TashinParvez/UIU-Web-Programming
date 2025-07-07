@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"><b>Hello</b> World</p>
+
+    <button onclick="show()">show</button>
+
+</body>
+
+
+<script>
+    let text = document.getElementById('demo').innerText;
+    let html = document.getElementById('demo').innerHTML;
+
+    console.log(text);  // Output: Hello World
+    console.log(html);  // Output: <b>Hello</b> World
+
+    function show() {
+        alert("This is innerText:\n" + text);
+        alert("this is innerHTML:\n" + html);
+    }
+
+</script>
+
+</html>
