@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="text1"> <span>TASHIN BlACK</span> </p> <br>
+    <button onclick="change()">CHANGE</button>
+</body>
+
+
+<script>
+    let flag = 1;
+
+    function change() {
+
+        let text = document.getElementById('text1').innerHTML;
+
+        if (flag) {
+
+            document.getElementById('text1').innerHTML = '<span style="color: red;">TASHIN BlACK</span>';
+
+            flag = 0;
+
+        } else {
+            document.getElementById('text1').innerHTML = '<span style="color: green;">TASHIN BlACK</span>';
+            flag = 1;
+        }
+    }
+</script>
+
+
+</html>

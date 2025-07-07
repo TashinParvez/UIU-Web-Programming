@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication Table Generator</title>
+</head>
+
+<body>
+
+    <h2>Multiplication Table Generator</h2>
+
+    <label>What number? </label>
+    <input type="number" id="number"><br><br>
+
+    <label>To which number? </label>
+    <input type="number" id="limit"><br><br>
+
+    <button onclick="generateTable()">Generate</button>
+
+    <h3>Result:</h3>
+    <div id="result"></div>
+
+    <script>
+        function generateTable() {
+
+            let num = parseInt(document.getElementById('number').value);
+            let limit = parseInt(document.getElementById('limit').value);
+
+            let output = "";
+
+            for (let i = 1; i <= limit; i++) {
+                // output += num + " * " + i + "  = " + i * num + '<br>';  // [for innerHTML]
+                output += num + " * " + i + "  = " + i * num + '\n';  // [for innerText]
+            }
+
+            // document.getElementById('result').innerHTML = output;
+            document.getElementById('result').innerText = output;
+        }
+    </script>
+
+</body>
+
+</html>
