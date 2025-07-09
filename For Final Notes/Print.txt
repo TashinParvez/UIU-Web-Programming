@@ -60,3 +60,9 @@ if ($conn->query($sql) === TRUE) {
 
 
 result.toFixed(2)
+
+//===================================//
+
+echo $seed . " " . $terms . "<br>";
+
+
