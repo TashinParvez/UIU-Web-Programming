@@ -1,26 +1,41 @@
 <?php
+
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = "root";
+$password = "";
 $dbname = "myDB";
 
-$conn = new mysqli($servername,$username,$password,$dbname );
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, 
-email) VALUES ('John', 'Doe', 'john@example.com')";
+$sql = "SELECT id, firstname, lastname FROM MyGuests";
+$result = $conn->query($sql);
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
+    }
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "0 results";
 }
-
 $conn->close();
 
+
+//===================================//
+
+$sql = "SELECT * FROM `student` WHERE 1";
+$result = mysqli_query($conn, $sql);
+$result = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+foreach ($result as $row) {
+    echo "id: " . $row["id"] . " - Name: " . $row["name"] . " " . $row["cgpa"] . "<br>";
+}
 
 //===================================//
 
