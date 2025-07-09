@@ -1,10 +1,12 @@
 <?PHP
+
 $seed   = $_POST['seed'];
 $terms  = $_POST['terms'];
 
 echo "seed : $seed <br> terms: $terms<br>";
 
 $prev = 0;
+
 for ($i = 1; $i <= $terms; $i++) {
     $prevC = $prev;
     $prevSum =  0;
@@ -14,5 +16,9 @@ for ($i = 1; $i <= $terms; $i++) {
     }
     $seed += $prevSum;
     $prev = $seed;
-    echo " $seed,";
+
+    if ($i == $terms)
+        echo " $seed";
+    else
+        echo " $seed, ";
 }

@@ -8,10 +8,11 @@
 </head>
 
 <body>
+
     Height <input type="text" id="height"><br>
     Weight <input type="text" id="weight"><br>
 
-    <button onclick="calculate()">Calculate</button><br>
+    <button onclick="calculate(12)">Calculate</button><br>
 
     calculation result <label for="" id="result">null</label><br>
     status <label for="" id="status">null</label><br>
@@ -38,6 +39,7 @@
             document.getElementById('status').innerHTML = 'not bad';
         } else if (result >= 30) {
             document.getElementById('status').innerHTML = 'good';
+            //  innerHTML innerText value
         }
 
 

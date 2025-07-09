@@ -4,10 +4,11 @@ $username = "root";
 $password = "";
 $dbname = "electricity_bill";
 
-// ---------------
+// ---------- DATA collect form 1st page -----
 $loc = $_POST['Location'];
 $area = $_POST['area'];
 $Unit = $_POST['Unit'];
+
 echo "Your Location: " . $loc . "<br>" . "Your Area: " . $area . "<br>" . "Consumed Units: " . $Unit . "<br>";
 // ---------------
 

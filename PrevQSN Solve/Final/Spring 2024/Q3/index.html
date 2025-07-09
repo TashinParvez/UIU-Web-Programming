@@ -10,17 +10,21 @@
 <body>
     <form action="bill.php" method="post" enctype="multipart/form-data">
 
-        Location: <select name="Location" id="">
+        Location:
+        <select name="Location" id="">
             <option value="" selected disabled hidden>Select Location</option>
             <option value="Dhaka">Dhaka</option>
             <option value="Chittagong">Chittagong</option>
             <option value="Rajshahi">Rajshahi</option>
             <option value="Khulna">Khulna</option>
-        </select> <br>
+        </select>
+        <br>
+
+
         area:
-        <input type="radio" name="area" id="" value="Urban">
+        <input type="radio" name="area" id="Urban" value="Urban">
         <label for="Urban">Urban</label>
-        <input type="radio" name="area" id="" value="Rural">
+        <input type="radio" name="area" id="Rural" value="Rural">
         <label for="Rural">Rural</label>
         <br>
 

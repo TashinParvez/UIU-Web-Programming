@@ -29,7 +29,7 @@
         let str = String(document.getElementById('text1').value);
         str = str.split('').sort().join('');
 
-        // str.length
+        // str.length [in js]
 
         
 
