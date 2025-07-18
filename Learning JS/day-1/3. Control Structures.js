@@ -8,6 +8,16 @@ if (age >= 18) {
   console.log("You are a minor.");
 }
 
+
+// 5 === 5        // true
+// 5 === "5"      // false (number ≠ string)
+
+
+
+
+
+
+
 //=============== SWITCH ===============
 
 let day = "Monday";
