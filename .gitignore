@@ -3,3 +3,7 @@ changes.txt
 else.md
 try.html
 Tailwind
+Learning JS/node_modules/
+**/node_modules/
+**/package.json
+**/package-lock.json
