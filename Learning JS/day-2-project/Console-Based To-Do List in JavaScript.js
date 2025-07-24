@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")(); // Only works in Node.js
+
 let task = [];
 
 function addTask() {}
@@ -18,10 +20,42 @@ function showMenu() {
   console.log("0. Exit");
 }
 
+function addTask(taskName, status) {
+  task.push({ name: taskName, completed: status });
+}
+
+function showAllTask() {
+  for (let atask of task) {
+    console.log(atask[0] + " " + atask[1]);
+  }
+}
+
+function markTaskAsComplete() {}
+function showPendingTask() {}
+function deleteTask() {}
+
 let n = 1;
 while (n) {
   showMenu();
-    const choice = prompt("Enter your choice: ");
-    
-    
+  n = Number(prompt("Enter your choice: "));
+
+  switch (n) {
+    case 1:
+      addTask();
+      break;
+    case 2:
+      showAllTask();
+      break;
+    case 3:
+      markTaskAsComplete();
+      break;
+    case 4:
+      showPendingTask();
+      break;
+    case 5:
+      deleteTask();
+      break;
+    case 0:
+      break;
+  }
 }
