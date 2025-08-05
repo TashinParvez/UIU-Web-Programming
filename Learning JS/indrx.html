@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <button id="signup" onclick="alert('Hi!')">Sign Up</button>
+    <br>
+
+    <button id="signup" onmouseover="alert('Hi!')">Sign Up</button>
+    <br>
+    
+    <button id="signup" onmouseover="alert('Hi!');" onmouseout="alert('Hello!');">Sign Up</button>
+    <br>
+    
+    <button id="signup" onmouseover="myownjsfunction();">Sign Up</button>
+    <br>
+    
+    <button id="signup" onmouseover="myownjsfunction2();">Sign Up</button>
+    <br>
+  
+    <button id="signup" onmouseover="myownjsfunction3();" onmouseout="myownjsfunction4()">Sign Up</button>
+    <br>
+    <hr />
+
+    <div>
+      <label for="num1">Num1</label>
+      <input type="text" id="num1">
+    </div>
+    <div>
+      <label for="num2">Num2</label>
+      <input type="text" id="num2">
+    </div>
+    <button id="plus" onclick="addition();">+</button>
+    <hr> -->
+
+  <div>
+    <label for="num1">Num1</label>
+    <input type="text" id="num1" />
+  </div>
+  <div>
+    <label for="num2">Num2</label>
+    <input type="text" id="num2" />
+  </div>
+  <button id="plus" onclick="calculate('+');">+</button>
+  <button id="minus" onclick="calculate('-');">-</button>
+  <button id="multiplication" onclick="calculate('*');">*</button>
+  <button id="division" onclick="calculate('/');">/</button>
+  <p id="output">Result = 0</p>
+  <hr />
+</body>
+<script>
+  // function myownjsfunction (){
+  //     alert('Hi from my own function');
+  // }
+
+  // function myownjsfunction2(){
+  //     document.getElementById('signup').style.backgroundColor="orange";
+  // }
+
+  // function myownjsfunction3(){
+  //     document.getElementById('signup').style.backgroundColor="red";
+  // }
+  // function myownjsfunction4(){
+  //     document.getElementById('signup').style.backgroundColor="green";
+  // }
+  // function addition() {
+  //   alert(Number(document.getElementById("num1").value) + Number(document.getElementById("num2").value));
+  // }
+  function calculate(oparator) {
+    let x = Number(document.getElementById("num1").value);
+    let y = Number(document.getElementById("num2").value);
+
+    if (oparator == "+") result = x + y;
+    else if (oparator == "-") result = x - y;
+    else if (oparator == "*") result = x * y;
+    else result = x / y;
+
+    // alert(result);
+    document.getElementById("output").innerText = "Result = " + result;
+  }
+</script>
+
+</html>
+
+<!-- 
+     CSS--                              Js--
+background-color: red   .......->   backgroundColor="red"
+JS is highly case sensitive
+-->
