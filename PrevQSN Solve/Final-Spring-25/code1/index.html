@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    Password: <input type="text" name="" id="pass"><br>
+    <button onclick="func()">Check Strength</button><br>
+    Feedback: <label for="" id="lb1"></label>
+</body>
+<script>
+
+    let attempts = 0;
+
+    function func(){
+        attempts +=1;
+
+        let str = String( document.getElementById('pass').value  ) ; 
+
+        let upp = 0,  loo = 0 , num = 0 , spc=0;
+        let totalstrength = 0 ;
+
+        for(let i = 0 ;i<str.length; i++){
+
+            // length
+            if(i>=6 && i%2 ==1 ) {
+                totalstrength += 10;
+            }
+
+            // uppercase
+            if( str[i] >= 'A' && str[i] <='Z'  && upp == 0){
+                totalstrength += 15;
+                upp=1;
+            }
+
+            // lowercase
+            if( str[i] >= 'a' && str[i] <='z'  && loo == 0){
+                            totalstrength += 15;
+                            loo=1;
+            }
+
+            // numbers
+              if( str[i] >= '0' && str[i] <='9'  && num == 0){
+               totalstrength += 20;
+               num=1;
+            }
+
+
+            // special 
+
+            if( (str[i] == '!' || str[i] == '@'  || str[i] == '#' || str[i] == '$' || str[i] == '%' ||
+             str[i] == '^' || str[i] == '&'  || str[i] == '*'  ) && spc == 0){
+               totalstrength += 25;
+               spc=1;
+            }
+
+        }
+
+
+        if(totalstrength >=0 && totalstrength<=30)
+        {
+
+            // document.getElementById('lb1').innerText = "Very Week";
+            
+            if(attempts>8){
+                document.getElementById('lb1').innerText = "Need Practice, Use symnboles like @#$%^ Numbers, upper and lower case";
+            } else {
+                document.getElementById('lb1').innerText = "Very Week";
+
+            }
+            
+        }else  if(totalstrength >=31 && totalstrength <= 50){
+            
+         
+
+            if(attempts>8){
+                document.getElementById('lb1').innerText = "Need Practice, Use symnboles like @#$%^ Numbers, upper and lower case";
+            } else {
+                document.getElementById('lb1').innerText = "Week";
+
+            }
+
+        }else if(totalstrength >=51 && totalstrength <= 70){
+            
+          
+
+            if(attempts>8){
+                document.getElementById('lb1').innerText = "Need Practice, Use symnboles like @#$%^ Numbers, upper and lower case";
+            } else {
+                  document.getElementById('lb1').innerText = "Medium";
+
+            }
+        }
+        else  if(totalstrength >=71 && totalstrength <= 90){
+            
+            document.getElementById('lb1').innerText = "Strong";
+
+            attempts = 0;
+        }
+        else  if(totalstrength >=91){
+
+            if(totalstrength >=100 ){
+            document.getElementById('lb1').innerText = "Perfect Password!  Great You done it you did great Job";
+              }
+            else 
+            {    
+            document.getElementById('lb1').innerText = "Very Strong";
+             }
+         attempts = 0;
+        }
+
+
+        // document.getElementById('lb1').innerText = str;
+    }
+
+    
+</script>
+</html>
