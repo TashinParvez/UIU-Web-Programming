@@ -1,16 +1,14 @@
-# 🌐 UIU Web Programming Repository  
-
+# 🌐 UIU Web Programming Repository
 ![GitHub repo size](https://img.shields.io/github/repo-size/TashinParvez/UIU-Web-Programming)
 ![GitHub contributors](https://img.shields.io/github/contributors/TashinParvez/UIU-Web-Programming)
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/TashinParvez/UIU-Web-Programming)
 
-Hey, folks! 👋  
+Hey, everyone! 👋
 
-This repository is designed to help students taking the **Spring 25 CSE 4165 / CSE 465 (D): Web Programming** course at **United International University (UIU)**. Whether you're new to web development or looking for structured resources, this repository will serve as a **one-stop guide** for learning **HTML, CSS, JavaScript, PHP, and MySQL**.  
+This repo is for UIU students taking Spring 2025 CSE 4165 / CSE 465 (D): `Web Programming`.
 
-##### My Web Notes : [🔗LINK](https://docs.google.com/document/d/1DJQAxsVs19zwLN7JP1DIeLjOxGJP3f68w03jHKtndfg/edit?tab=t.0#heading=h.tn5bxb7lssyg)
+It’s a one-stop resource to learn `HTML`, `CSS`, `JavaScript`, `PHP`, and `MySQL` — perfect for beginners or anyone looking for organized study materials.
 
-## 📌 How This Repository Can Help You  
+## 📌 How This Repository Can Help You 
 
 - **Quick Reference:** Easily find well-structured code and concepts, saving time on searching for online resources.  
 - **Exam Preparation:** Access solved problems and important topics covered before exams to get a clear idea of what to focus on.  
@@ -26,41 +24,104 @@ This repository is designed to help students taking the **Spring 25 CSE 4165 / C
 ✔️ **JavaScript** - Dynamic web interactions  
 ✔️ **PHP** - Server-side scripting  
 ✔️ **MySQL** - Database integration  
-✔️ **Web APIs** - Connecting front-end and back-end  
 
+## 📚 Table of Contents
 
-## Table of Contents
+### 📝 [Assignments-for-my-own](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Assignments-for-my-own)
 
-- [CSS-Remember-Things.md](./CSS-Remember-Things.md)    
-- [HTML-Remember-Things.md](./HTML-Remember-Things.md)      
-- [Assignments-for-my-own/](./Assignments-for-my-own)     
-- [Faculty_given_Code__Class_Code/](./Faculty_given_Code__Class_Code)
-- [My_Class_Code_and_Notes/](./My_Class_Code_and_Notes)
-- [My_Prev_Code/](./My_Prev_Code)
-- [Others/](./Others)                   
-    - [extra.html](./Others/extra.html)           
-    - [FilePath.md](./Others/FilePath.md)           
-    - [Images](./Others/Images)
-    - [Shortcuts/](./Others/Shortcuts)               # Shortcuts and cheatsheets
-        - [VS code keyboard-shortcut.pdf](./Others/Shortcuts/VS%20code%20keyboard-shortcut.pdf)  
-        - [css](./Others/Shortcuts/css)
-        - [Js Notes](./Others/Shortcuts/Js%20Notes)
-- [PrevQSN/](./PrevQSN/)                   
-    - [Fall24/](./PrevQSN/Fall24)                 
-    - [Summer24/](./PrevQSN/Summer24)            
-- [Project/](./Project)
+- [After L1](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Assignments-for-my-own/L1)
+- [After L2](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Assignments-for-my-own/L2)
+- [After L5_Glassmorphism-Login-Form](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Assignments-for-my-own/L5_Glassmorphism-Login-Form)
+- [After L5_Profile-Card-Hover-Effect - NFY](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Assignments-for-my-own/L5_Profile-Card-Hover-Effect%20-%20NFY)
+- [After L5_Profile-Card](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Assignments-for-my-own/L5_Profile-Card)
 
+---
 
-## Previous Questions
+### 📘 [Faculty_given_Code\_\_Class_Code](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code)
 
-Here, I store previous semester questions for reference, helping with exam preparations. For example:
+- [web01](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/web01)
+- [web02](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/web02)
+- [web03](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/web03)
+- [web05](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/web05)
+- [web06](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/web06)
+- [web07 - Javascript](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/web07%20-%20Javascript)
 
-- [Fall24](./PrevQSN/Fall24)  
-- [Summer24](./PrevQSN/Summer24)
+- [Javascript/7-8th_class](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/Javascript/7-8th_class)
+- [MySQL](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/MySQL)
+- [PHP](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/PHP)
+- [PRACTICE Code For MID/LinkedIn UI Code](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Faculty_given_Code__Class_Code/PRACTICE%20Code%20For%20MID/LinkedIn%20UI%20Code)
 
+---
+
+### 🎨 Learning Resources
+
+- [Learning JavaScript(JS)](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Learning%20JS)
+- [Learning CSS](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Learning-CSS)
+- [Learning HTML](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Learning-HTML)
+
+---
+
+### 🧠 [My_Class_Code_and_Notes](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes)
+
+- [Lab01](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Lab01)
+- [Lab02](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Lab02)
+- [Lab03](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Lab03)
+- [Lab05](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Lab05)
+- [Lab06 - FB_UI](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Lab06%20-%20FB_UI)
+- [Practice For MID Exam](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Practice%20For%20MID)
+
+- [PHP Learning](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/PHP%20Learning)
+- [MySQL Learning](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/MySQL%20Learning)
+- [Javascript Learning](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Javascript%20Learning)
+- [practice for final Exam](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/practice%20for%20final)
+
+---
+
+### 💬 Prectice For exams
+
+- [Practice For MID Exam](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/Practice%20For%20MID)
+- [practice for final Exam](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/My_Class_Code_and_Notes/practice%20for%20final)
+
+---
+
+### 📂 [Others Imp Things](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Others)
+
+- [HTML – Things to Remember.md](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Others/HTML-Remember-Things.md)
+- [extra.html](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Others/extra.html)
+- [CSS-Remember-Things.md](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Others/CSS-Remember-Things.md)
+- [CSS-Selectors.md](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Others/CSS-Selectors.md)
+- [Web-Dev-Quick-Notes.txt](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Others/notes.txt)
+- [Understanding-File-Path-for-Web.md](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Others/FilePath.md)
+
+---
+
+### 🗂️ [PrevQSN Solve](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve)
+
+- [Final - Fall 2023](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve/Final%20-%20Fall%202023)
+- [Final - Spring 2024](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve/Final%20-%20Spring%202024)
+- [Final-Spring-25](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve/Final-Spring-25)
+- [MID - Fall24/UIU Housing Society](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve/MID%20-%20Fall24/UIU%20Housing%20Society)
+- [MID - Spring 25](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve/MID%20-%20Spring%2025)
+- [MID -Summer 24](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve/MID%20-Summer%2024)
+- [Summer24](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/PrevQSN%20Solve/Summer24)
+
+---
+
+### 🖨️ Print Notes
+
+- [Print Notes For Exam](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Print%20Notes%20For%20Exam)
+- [Final Exam Print.txt](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Print%20Notes%20For%20Exam/Print.txt)
+- [mid-exam-tashin-notes.txt](https://github.com/TashinParvez/UIU-Web-Programming/blob/main/Print%20Notes%20For%20Exam/mid-tashin-notes.txt)
+
+---
+
+### 💼 [Basic Projects](https://github.com/TashinParvez/UIU-Web-Programming/tree/main/Project)
+
+---
 
 ### 🛠️ My VS-Code Setup : [Link](https://github.com/TashinParvez/When-I-sit-on-a-new-pc)
 
+---
 ## 🏡 Contributing
 Contributions are welcome! If you have ideas, suggestions, or resources that could enhance this repository, feel free to submit a pull request or open an issue.
 
