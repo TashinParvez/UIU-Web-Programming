@@ -64,6 +64,14 @@ for (let i = 0; i < students.length; i++) {
 }
 
 
+// ======================== ternary operator =============================
+//               condition ? valueIfTrue : valueIfFalse;
+
+
+let age = 10;
+let canVote = age > 10 ? "yes" : "no";
+
+
 
 
 

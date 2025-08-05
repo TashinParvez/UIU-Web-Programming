@@ -25,9 +25,17 @@ greet2("Parvez");
 
 //  ============== 🔹 Arrow Function (ES6+)  ==============
 
-const greet3 = (name) => console.log(`Hi, ${name}`);
+const greet3 = (name) => {
+  console.log(`Hi, ${name}`);
+};
 
-greet3("RRR"); // Hey, Tashin
+greet3("tashin"); // Hey, Tashin
+
+// const funcName = (parameters) => { funcBody };
+
+
+// anonymous function
+// () => {}
 
 //============== 🧠 Callback Function ==============
 
@@ -42,3 +50,4 @@ function processUser(name, callback) {
 console.log(processUser("Tashin", greet5)); // in a func paramitter passing a function
 
 // so calling processUser and sending greet5 as it parametter, inside processUser greet5 is called by callback, and calling callback func means calling greet5
+
