@@ -122,8 +122,12 @@ It’s a one-stop resource to learn `HTML`, `CSS`, `JavaScript`, `PHP`, and `MyS
 ### 🛠️ My VS-Code Setup : [Link](https://github.com/TashinParvez/When-I-sit-on-a-new-pc)
 
 ---
+
 ## 🏡 Contributing
-Contributions are welcome! If you have ideas, suggestions, or resources that could enhance this repository, feel free to submit a pull request or open an issue.
+Got ideas, suggestions, or useful resources to improve this repo?
+Feel free to fork the repo, submit a pull request, or open an issue.
+Your contributions can help fellow UIU students learn better and faster!
+
 
 ## 📞 Contact
 For any questions, suggestions, or feedback, please feel free to reach out to the repository maintainer.
