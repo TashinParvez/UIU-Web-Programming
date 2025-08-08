@@ -155,3 +155,38 @@ Imagine you’re in a house (your project folder), and you’re trying to find a
 
 - **Relative**: All your examples are relative (start from "where I am"). They’re flexible for projects you move around.
 - **Absolute**: Starts from the top (e.g., `/image/blog-icon.png` means "from the root of the project or system"). Web developers use this for sites, but it’s less common in local files.
+
+
+
+
+## 🎯  Visual Summary 📝
+
+```
+/
+├── home/
+│   └── tashin/
+│       ├── Documents/
+│       │   └── notes.txt
+│       └── Downloads/
+```
+
+- If you’re in `/home/tashin/Downloads`, relative path to `notes.txt` is:
+
+```bash
+../Documents/notes.txt
+```
+
+- Absolute path to `notes.txt` is always:
+
+```bash
+/home/tashin/Documents/notes.txt
+```
+
+---
+
+## Quick Tips
+
+| Path Type     | Starts With | Example                                   | Depends on Current Directory? |
+| ------------- | ----------- | ----------------------------------------- | ----------------------------- |
+| Absolute Path | `/` or `~`  | `/home/tashin/Documents` or `~/Documents` | No                            |
+| Relative Path | No prefix   | `Documents` or `../Documents`             | Yes                           |
